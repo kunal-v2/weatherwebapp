@@ -93,13 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'snow':
                 return 'images/snow.jpg'; // snowy weather image
             case 'thunderstorm':
-                return 'images/thunderstorm.jpg'; // thunderstorm image
+                return 'images/haze.png'; // thunderstorm image
             case 'mist':
-                 return 'images/thunderstorm.jpg';
-            case 'haze': return 'images/thunderstorm.jpg';
-            case 'fog':
-                return 'images/mist.jpg'; // misty weather image
-            default:return 'images/thunderstorm.jpg';
+                 return 'images/haze.png';
+            case 'haze': return 'images/haze.png';
+            case 'fog':'images/haze.png'; // misty weather image
+                
+            default:
                 return 'images/def.png'; // default weather image
         }
     }
