@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Apply the new font to the entire body */
+    font-weight: 400; /* Default weight */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #5ADBFF; /* Set a background color for the rest of the page */
+}
+
+header {
+    background-color:#094074;
+    color: #FFDD4A;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color:#3C6997;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.firstSection {
+    display: flex;
+    width: 100%;
+}
+
+.leftContainer {
+    width: 25%;
+    padding-top: 20px;
+    margin-right: 10px;
+    border-radius: 20px  ;
+    background-size: cover;
+    background-position: center;
+    color: black; /* Text color for better readability */
+    height: 650px;
+}
+
+.rightContainer {
+    width: 75%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-color: #25a0c2; /* Teal blue background */
+    padding: 10px;
+    color: black;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeDisplay {color: white;
+    text-align: center;
+    padding-top: 70px ;
+    font-size: 35px;
+}
+
+
+#search {
+    width: 30%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #3C6997;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #094074;
+}
+#search:focus {
+    border-color: #094074;
+    box-shadow: 0 0 10px rgba(9, 64, 116, 0.5);
+}
+button[onclick="searchWeather()"] {
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    background-color: #094074;
+    color: #FFDD4A;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 10px;
+}
+button[onclick="searchWeather()"]:hover {
+    background-color: #3C6997;
+    box-shadow: 0 0 10px rgba(60, 105, 151, 0.5);
+}
+/* Style for the "Weather Forecast" heading */
+.weather-heading {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#weatherResult {
+    text-align: center;
+    color: #ffffff; /* Dark blue for contrast */
+    margin-top: 20px;
+}
+
+#weatherResult p {
+    font-size: px;
+    margin: 8px 0;
+    font-weight: 500; /* Light font weight for a modern look */
+}
+
+#weatherResult strong {
+    font-size: 28px;
+    font-weight: 600; /* Slightly bolder for emphasis */
+    display: block;
+    margin-bottom: 10px;
+  
+}
+
+.weather-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

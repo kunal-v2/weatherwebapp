@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header><h1>WEATHER X</h1></header>
+    <nav>
+        <ul>
+            <button onclick="getWeather('DELHI')">DELHI</button>
+            <button onclick="getWeather('GURUGRAM')">GURUGRAM</button>
+            <button onclick="getWeather('Bengaluru')">BENGALURU</button>
+            <button onclick="getWeather('MUMBAI')">MUMBAI</button>
+            <button onclick="getWeather('PUNE')">PUNE</button>
+        </ul>
+    </nav>
+    <main>
+        <section class="firstSection">
+            <div class="leftContainer">
+                <!-- Time, Date, and Day will be displayed here -->
+                <div id="timeDisplay"></div>
+            </div>
+
+            <div class="rightContainer">
+                <h1 class="weather-heading">Weather Forecast</h1>
+                <input type="text" id="search" placeholder="Enter city">
+                <button onclick="searchWeather()">Search</button>
+                <div id="weatherResult"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
