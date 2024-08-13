@@ -5,12 +5,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
-    background-color: #5ADBFF; /* Set a background color for the rest of the page */
+    background-color: #f8f8f8; /* Set a background color for the rest of the page */
 }
 
 header {
-    background-color:#094074;
-    color: #FFDD4A;
+    background-color:#64c6ff;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
 }
